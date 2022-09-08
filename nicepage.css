@@ -37592,11 +37592,13 @@ a.u-link.u-text-hover-grey-90:hover {
         
         
         
-        --theme-sheet-width-xl: 1140px;
+        --theme-sheet-width-xl: 941px;
         --theme-sheet-width-lg: 940px;
-        --theme-sheet-width-md: 720px;
-        --theme-sheet-width-sm: 540px;
-        --theme-sheet-width-xs: 340px;
+        --theme-sheet-width-md: 940px;
+        --theme-sheet-width-sm: 767px;
+        --theme-sheet-width-xs: 575px;
+        
+        
         
         
         
@@ -37719,6 +37721,11 @@ a.u-link.u-text-hover-grey-90:hover {
         {
         margin-top: 20px;
         margin-bottom: 20px;
+        }
+        .u-body
+        {
+        background-image: linear-gradient(#478ac9, #db545a);
+        background-attachment: fixed;
         }
         /** common-rules **/
 
@@ -37904,23 +37911,34 @@ a.u-link.u-text-hover-grey-90:hover {
 
 .u-header .u-nav-1 {
   font-size: 1rem;
+  letter-spacing: normal;
 }
 
 .u-header .u-nav-2 {
   font-size: 1.25rem;
 }
 @media (max-width: 1199px) {
+  .u-header .u-sheet-1 {
+    min-height: 40px;
+  }
+
+  .u-header .u-image-1 {
+    width: 38px;
+    height: 38px;
+  }
+
   .u-header .u-menu-1 {
     width: auto;
-    margin-top: -36px;
+    margin-top: -29px;
     margin-right: 137px;
-  }
-
-  .u-header .u-nav-1 {
-    letter-spacing: normal;
+    margin-bottom: 12px;
   }
 }
-
+@media (max-width: 991px) {
+  .u-header .u-menu-1 {
+    margin-top: -29px;
+  }
+}
 
 @media (max-width: 575px) {
   .u-header .u-menu-1 {
